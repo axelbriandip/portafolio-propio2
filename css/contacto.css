@@ -1,0 +1,79 @@
+:root {
+    --violeta-claro: #8e7bef;
+    --violeta-oscuro: #5d3bef;
+    --casi-blanco: #f9f6ff;
+    --negro: #222222;
+    --gris-oscuro: #423f40;
+    --blanco: #ffffff;
+    --gris-claro: #f9f5f2;
+}
+
+.contacto {
+    padding: 0 1rem;
+}
+
+.contacto .titulo-contacto {
+    text-align: center;
+    margin: 3rem 0 1rem;
+}
+
+.contacto .contenedor-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.contacto .contenedor-cards .card {
+    background-color: var(--gris-claro);
+    padding: 1rem;
+    margin: 1rem .5rem;
+}
+
+.contacto .contenedor-cards .card h4,
+.contacto .contenedor-cards .card span {
+    text-align: center;
+    display: block;
+}
+
+.contacto .contenedor-cards .card {
+    display: flex;
+    justify-content: center;
+    max-width: 12rem;
+}
+
+.contacto .contenedor-cards .card img {
+    width: 35%;
+    padding-bottom: 1.5rem;
+}
+
+.contacto .contenedor-cards .card h4 {
+    font-size: 1.25rem;
+    color: var(--negro);
+}
+
+.contacto .contenedor-cards .card span {
+    font-size: 1rem;
+    color: var(--gris-oscuro);
+}
+
+/* celulares promedio */
+@media only screen and (min-width: 450px) {}
+
+/* Small devices: teléfonos grandes y tablets */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices: tablets */
+@media only screen and (min-width: 768px) {
+    .contacto .contenedor-cards .card {
+        margin: 1rem 1.5rem;
+    }
+}
+
+/* Large devices: laptop y desktop */
+@media only screen and (min-width: 992px) {
+    .contacto .contenedor-cards .card {
+        margin: 1rem 3rem;
+    }
+}
+
+/* Extra large devices: laptop y desktop grandes */
+@media only screen and (min-width: 1200px) {}
