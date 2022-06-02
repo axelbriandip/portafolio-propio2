@@ -1,0 +1,1 @@
+* intenté poner el .nav-desktop en 768 width pero por la cantidad de ítems entraba todo muy apretado, sin margen entre ítems.
