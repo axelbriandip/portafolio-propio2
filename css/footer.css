@@ -1,0 +1,19 @@
+:root {
+    --violeta-claro: #8e7bef;
+    --violeta-oscuro: #5d3bef;
+    --casi-blanco: #f9f6ff;
+    --negro: #222222;
+    --gris-oscuro: #423f40;
+    --blanco: #ffffff;
+    --gris-claro: #f9f5f2;
+}
+
+.footer {
+    margin-top: 1rem;
+    padding: 2rem 0;
+    background-color: var(--gris-claro);
+    color: var(--violeta-oscuro);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}

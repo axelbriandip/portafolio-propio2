@@ -37,7 +37,8 @@
 .contacto .contenedor-cards .card {
     display: flex;
     justify-content: center;
-    max-width: 12rem;
+    /* max-width: 12rem; */
+    max-width: 14rem;
 }
 
 .contacto .contenedor-cards .card img {

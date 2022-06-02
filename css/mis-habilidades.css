@@ -8,6 +8,10 @@
     --gris-claro: #f9f5f2;
 }
 
+.mis-habilidades {
+    margin-top: 3rem;
+}
+
 .mis-habilidades h2 {
     font-size: 1.25rem;
     color: var(--negro);
