@@ -119,7 +119,7 @@
 
     .home .contenedor-redes .redes {
         top: -1.5rem;
-    }    
+    }
 }
 
 /* Small devices: teléfonos grandes y tablets */
@@ -142,29 +142,82 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    /* .nav .nav-desktop {
-        display: none;
-    } */
-}
-
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
-    /* .nav .nav-normal, .nav .nav-toggle {
-        display: none;
-    } */
+    .home {
+        display: grid;
+        grid-template-areas:
+        "foto foto foto foto foto texto"
+        "foto foto foto foto foto redes"
+        "foto foto foto foto foto boton";
+        padding: 4rem 3.5rem;
+    }
+
+    .home .contenedor-foto {
+        grid-area: foto;
+    }
+
+    .home .contenedor-texto {
+        grid-area: texto;
+    }
+
+    .home .contenedor-redes {
+        grid-area: redes;
+        margin-bottom: 2rem;
+    }
+
+    .home .contenedor-redes .redes div {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .home .contenedor-redes .redes div:nth-child(2) {
+        margin: 0 1.5rem;
+    }
+
+    .home .contenedor-redes .redes {
+        top: 0;
+    }
+
+    .home .contenedor-redes {
+        position: relative;
+        justify-content: flex-start;
+    }
+
+    .home .contenedor-boton {
+        grid-area: boton;
+    }
+
+    .home .contenedor-boton .boton-contactame{
+        width: 70%;
+        padding:.25rem 0;
+    }
 }
 
 /* Large devices: laptop y desktop */
 @media only screen and (min-width: 992px) {
-    /* .nav .nav-desktop li {
-        margin-left: 1rem;
-    } */
+    .home .contenedor-boton .boton-contactame{
+        width: 50%;
+    }
 }
 
 /* Extra large devices: laptop y desktop grandes */
 @media only screen and (min-width: 1200px) {
-    /* .nav .nav-desktop li {
-        margin-left: 1.5rem;
-    } */
+    .home {
+        padding: 4rem 6rem;
+    }
+
+    .home .contenedor-redes .redes div {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .home .contenedor-boton{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .home .contenedor-boton .boton-contactame{
+        padding:.5rem 0;
+    }
 }
