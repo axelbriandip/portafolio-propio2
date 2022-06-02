@@ -1,0 +1,92 @@
+:root {
+    --violeta-claro: #8e7bef;
+    --violeta-oscuro: #5d3bef;
+    --casi-blanco: #f9f6ff;
+    --negro: #222222;
+    --gris-oscuro: #423f40;
+    --blanco: #ffffff;
+    --gris-claro: #f9f5f2;
+}
+
+.mis-habilidades h2 {
+    font-size: 1.25rem;
+    color: var(--negro);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.mis-habilidades .scroll {
+    display: flex;
+    overflow-x: auto;
+}
+
+.mis-habilidades .scroll::-webkit-scrollbar {
+    width: 0;
+}
+
+.mis-habilidades .item {
+    min-width: 12rem;
+    height: 12rem;
+    background-color: var(--gris-claro);
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.mis-habilidades .item h4 {
+    font-size: 1rem;
+    color: var(--negro);
+    text-align: left;
+}
+
+.mis-habilidades .item img {
+    height: 1rem;
+    margin-right: .5rem;
+}
+
+.mis-habilidades .item .header-habilidad {
+    display: flex;
+    align-items: center;
+}
+
+.mis-habilidades .item p {
+    padding-top: 1rem;
+    font-size: .75rem;
+    color: var(--gris-oscuro);
+    text-align: justify;
+}
+
+.mis-habilidades .scroll .item:first-child {
+    margin-left: 1rem;
+}
+
+.mis-habilidades .scroll .item:last-child {
+    margin-right: 1rem;
+}
+
+/* celulares promedio */
+@media only screen and (min-width: 450px) {}
+
+/* Small devices: teléfonos grandes y tablets */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices: tablets */
+@media only screen and (min-width: 768px) {
+    .mis-habilidades {
+        padding: 5rem;
+    }
+
+    .mis-habilidades .scroll {
+        overflow-x: visible;
+    }
+    
+    .mis-habilidades .item {
+        min-width: 8rem;
+        min-height: 16rem;
+    }
+}
+
+/* Large devices: laptop y desktop */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices: laptop y desktop grandes */
+@media only screen and (min-width: 1200px) {}
