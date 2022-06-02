@@ -1,3 +1,18 @@
+:root {
+    --violeta-claro: #8e7bef;
+    --violeta-oscuro: #5d3bef;
+    --casi-blanco: #f9f6ff;
+    --negro: #222222;
+    --gris-oscuro: #423f40;
+    --blanco: #ffffff;
+    --gris-claro: #f9f5f2;
+}
+
+.nav {
+    width: 100%;
+    position: relative;
+}
+
 /* nav normal */
 .nav .nav-normal {
     background-color: var(--casi-blanco);
@@ -11,11 +26,6 @@
 }
 
 /* nav toggle */
-.nav {
-    width: 100%;
-    position: relative;
-}
-
 .nav .nav-toggle {
     background-color: var(--violeta-oscuro);
     padding: .5rem 0;
@@ -37,27 +47,67 @@
 .nav .nav-toggle a {
     text-decoration: none;
     color: var(--blanco);
+    font-size: 1rem;
 }
 
 .toggle {
     display: none;
 }
 
-.footer {
-    height: 800px;
+/* nav desktop */
+.nav .nav-desktop {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 5%;
+    background-color: var(--casi-blanco);
+}
+
+.nav .nav-desktop li {
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.nav .nav-desktop a {
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.nav .nav-desktop a:hover {
+    color: var(--violeta-claro);
 }
 
 /* celulares promedio */
-@media only screen and (min-width: 450px) {}
+/* @media only screen and (min-width: 450px) {} */
 
 /* Small devices: teléfonos grandes y tablets */
-@media only screen and (min-width: 600px) {}
+/* @media only screen and (min-width: 600px) {} */
+
+@media only screen and (max-width: 767px) {
+    .nav .nav-desktop {
+        display: none;
+    }
+}
 
 /* Medium devices: tablets */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .nav .nav-normal, .nav .nav-toggle {
+        display: none;
+    }
+}
 
 /* Large devices: laptop y desktop */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .nav .nav-desktop li {
+        margin-left: 1rem;
+    }
+}
 
 /* Extra large devices: laptop y desktop grandes */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .nav .nav-desktop li {
+        margin-left: 1.5rem;
+    }
+}

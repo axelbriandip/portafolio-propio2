@@ -5,16 +5,6 @@
     font-family: sans-serif;
 }
 
-:root {
-    --violeta-claro: #8e7bef;
-    --violeta-oscuro: #5d3bef;
-    --casi-blanco: #f9f6ff;
-    --negro: #222222;
-    --gris-oscuro: #423f40;
-    --blanco: #ffffff;
-    --gris-claro: #f9f5f2;
-}
-
 /* celulares promedio */
 @media only screen and (min-width: 450px) {}
 
@@ -26,22 +16,10 @@
 }
 
 /* Medium devices: tablets */
-@media only screen and (min-width: 768px) {
-    html {
-        font-size: 1.4rem;
-    }
-}
+@media only screen and (min-width: 768px) {}
 
 /* Large devices: laptop y desktop */
-@media only screen and (min-width: 992px) {
-    html {
-        font-size: 1.6rem;
-    }
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices: laptop y desktop grandes */
-@media only screen and (min-width: 1200px) {
-    html {
-        font-size: 1.8rem;
-    }
-}
+@media only screen and (min-width: 1200px) {}
