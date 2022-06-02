@@ -1,0 +1,100 @@
+:root {
+    --violeta-claro: #8e7bef;
+    --violeta-oscuro: #5d3bef;
+    --casi-blanco: #f9f6ff;
+    --negro: #222222;
+    --gris-oscuro: #423f40;
+    --blanco: #ffffff;
+    --gris-claro: #f9f5f2;
+}
+
+/* experiencia */
+.experiencia {
+    padding: 0 1rem;
+}
+
+.experiencia h2 {
+    font-size: 1.5rem;
+    color: var(--negro);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.experiencia .item {
+    background-color: var(--gris-claro);
+    padding: 1rem 0;
+    margin: 1rem 0;
+    max-width: 25rem;
+}
+
+.experiencia .item .caja-logo,
+.experiencia .item .caja-duracion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencia .item .caja-descripcion {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: .5rem;
+}
+
+.experiencia .item .caja-logo img {
+    width: 70%;
+}
+
+.experiencia .item .caja-descripcion .empresa {
+    font-size: 1.25rem;
+}
+
+.experiencia .item .caja-descripcion span {
+    display: block;
+}
+
+.experiencia .item .caja-descripcion .cargo {
+    font-size: .75rem;
+}
+
+.experiencia .item .caja-descripcion .años {
+    font-size: .5rem;
+}
+
+.experiencia .item .caja-duracion span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* celulares promedio */
+@media only screen and (min-width: 450px) {}
+
+/* Small devices: teléfonos grandes y tablets */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices: tablets */
+@media only screen and (min-width: 768px) {
+    .experiencia {
+        padding: 0 5rem;
+    }
+
+    .experiencia .col-12 {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .experiencia .item {
+        max-width: 25rem;
+    }
+
+    .experiencia .col-12 {
+        justify-content: space-around;
+    }
+}
+
+/* Large devices: laptop y desktop */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices: laptop y desktop grandes */
+@media only screen and (min-width: 1200px) {}

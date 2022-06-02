@@ -26,7 +26,8 @@
 
 .mis-habilidades .item {
     min-width: 12rem;
-    height: 12rem;
+    /* height: 12rem; */
+    min-height: auto;
     background-color: var(--gris-claro);
     margin-right: 1rem;
     padding: 1rem;
@@ -81,7 +82,8 @@
     
     .mis-habilidades .item {
         min-width: 8rem;
-        min-height: 16rem;
+        /* min-height: 16rem; */
+        min-height: auto;
     }
 }
 
