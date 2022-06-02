@@ -1,0 +1,45 @@
+:root {
+    --violeta-claro: #8e7bef;
+    --violeta-oscuro: #5d3bef;
+    --casi-blanco: #f9f6ff;
+    --negro: #222222;
+    --gris-oscuro: #423f40;
+    --blanco: #ffffff;
+    --gris-claro: #f9f5f2;
+}
+
+.acerca-de-mi {
+    padding: 0 1rem;
+}
+
+.acerca-de-mi .titulo-acerca {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--negro);
+}
+
+.acerca-de-mi .parrafo-acerca {
+    font-size: 1rem;
+    text-align: justify;
+    color: var(--gris-oscuro);
+}
+
+/* celulares promedio */
+@media only screen and (min-width: 450px) {}
+
+/* Small devices: teléfonos grandes y tablets */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices: tablets */
+@media only screen and (min-width: 768px) {
+    .acerca-de-mi {
+        padding: 0 6rem;
+    }    
+}
+
+/* Large devices: laptop y desktop */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices: laptop y desktop grandes */
+@media only screen and (min-width: 1200px) {}
