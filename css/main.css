@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
@@ -19,11 +19,7 @@
 @media only screen and (min-width: 450px) {}
 
 /* Small devices: teléfonos grandes y tablets */
-@media only screen and (min-width: 600px) {
-    html {
-        font-size: 1.2rem;
-    }
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {}

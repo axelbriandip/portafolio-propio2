@@ -10,11 +10,12 @@
 
 .contacto {
     padding: 0 1rem;
+    margin-top: 3rem;
 }
 
 .contacto .titulo-contacto {
     text-align: center;
-    margin: 3rem 0 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .contacto .contenedor-cards {
@@ -42,13 +43,14 @@
 }
 
 .contacto .contenedor-cards .card img {
-    width: 35%;
+    width: 25%;
     padding-bottom: 1.5rem;
 }
 
 .contacto .contenedor-cards .card h4 {
     font-size: 1.25rem;
     color: var(--negro);
+    margin-bottom: .5rem;
 }
 
 .contacto .contenedor-cards .card span {

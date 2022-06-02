@@ -10,11 +10,12 @@
 
 .portafolio {
     padding: 0 1rem;
+    margin-top: 3rem;
 }
 
 .portafolio .titulo-portafolio {
     text-align: center;
-    margin: 3rem 0 1rem;
+    margin: 0 0 1rem 0;
 }
 
 .portafolio .contenedor-fotos-p div {
