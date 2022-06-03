@@ -13,9 +13,9 @@
     margin-top: 3rem;
 }
 
-.contacto .titulo-contacto {
+.contacto h2 {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .contacto .contenedor-cards {
@@ -26,55 +26,71 @@
 .contacto .contenedor-cards .card {
     background-color: var(--gris-claro);
     padding: 1rem;
-    margin: 1rem .5rem;
-}
-
-.contacto .contenedor-cards .card h4,
-.contacto .contenedor-cards .card span {
+    margin: .5rem 0;
+    width: 12rem;
+    height: 10rem;
     text-align: center;
-    display: block;
-}
-
-.contacto .contenedor-cards .card {
     display: flex;
+    align-items: center;
     justify-content: center;
-    /* max-width: 12rem; */
-    max-width: 14rem;
 }
 
 .contacto .contenedor-cards .card img {
-    width: 25%;
-    padding-bottom: 1.5rem;
+    width: 40%;
+    padding-bottom: 1rem;
 }
 
 .contacto .contenedor-cards .card h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: var(--negro);
-    margin-bottom: .5rem;
 }
 
 .contacto .contenedor-cards .card span {
-    font-size: 1rem;
+    font-size: .75rem;
     color: var(--gris-oscuro);
 }
 
 /* celulares promedio */
-@media only screen and (min-width: 450px) {}
+@media only screen and (min-width: 450px) {
+    .contacto .contenedor-cards .card:first-child {
+        margin-right: .5rem;
+    }
+
+    .contacto .contenedor-cards .card:last-child {
+        margin-left: .5rem;
+    }
+}
 
 /* Small devices: teléfonos grandes y tablets */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .contacto .contenedor-cards .card:first-child {
+        margin-right: 1rem;
+    }
+
+    .contacto .contenedor-cards .card:last-child {
+        margin-left: 1rem;
+    }
+}
 
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
-    .contacto .contenedor-cards .card {
-        margin: 1rem 1.5rem;
+    .contacto .contenedor-cards .card:first-child {
+        margin-right: 2rem;
+    }
+
+    .contacto .contenedor-cards .card:last-child {
+        margin-left: 2rem;
     }
 }
 
 /* Large devices: laptop y desktop */
 @media only screen and (min-width: 992px) {
-    .contacto .contenedor-cards .card {
-        margin: 1rem 3rem;
+    .contacto .contenedor-cards .card:first-child {
+        margin-right: 3rem;
+    }
+
+    .contacto .contenedor-cards .card:last-child {
+        margin-left: 3rem;
     }
 }
 

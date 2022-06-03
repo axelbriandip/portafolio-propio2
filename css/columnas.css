@@ -59,7 +59,7 @@
 @media (min-width: 576px) { 
     .col-sm-12 {
         width: 100%;
-    }
+    } 
     
     .col-sm-11 {
         width: calc(100% / 12 * 11);
