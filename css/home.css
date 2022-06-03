@@ -32,7 +32,7 @@
 
 .home .contenedor-foto .foto-fondo .lineas-fondo{
     position: absolute;
-    top: -1.5rem;
+    top: -3rem;
     left: -.5rem;
     z-index: -1;
     width: 85%;
@@ -144,6 +144,10 @@
 
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
+    .home .contenedor-foto .foto-fondo .lineas-fondo{
+        top: -1rem;
+    }
+
     .home {
         display: grid;
         grid-template-areas:
