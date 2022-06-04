@@ -10,12 +10,12 @@
 
 .portafolio {
     padding: 0 1rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
-.portafolio .titulo-portafolio {
+.portafolio .titulo-portafolio h2 {
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .portafolio .contenedor-fotos-p div {
@@ -60,7 +60,7 @@
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
     .portafolio {
-        padding: 0 4rem;
+        padding: 0 5rem;
     }
 
     .portafolio .contenedor-fotos-p .foto1{

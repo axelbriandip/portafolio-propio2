@@ -9,7 +9,7 @@
 }
 
 .mis-habilidades {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .mis-habilidades h2 {
@@ -77,17 +77,29 @@
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
     .mis-habilidades {
-        padding: 5rem;
+        padding: 0 5rem;
     }
 
     .mis-habilidades .scroll {
         overflow-x: visible;
     }
-    
+
     .mis-habilidades .item {
         min-width: 8rem;
-        /* min-height: 16rem; */
         min-height: auto;
+        margin-right: 0;
+    }
+
+    .mis-habilidades .scroll .item:first-child {
+        margin-left: 0;
+    }
+    
+    .mis-habilidades .scroll .item:last-child {
+        margin-right: 0;
+    }
+
+    .mis-habilidades .scroll .item:nth-child(2) {
+        margin: 0 1rem;
     }
 }
 
