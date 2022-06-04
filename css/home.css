@@ -70,6 +70,7 @@
     justify-content: center;
     align-items: center;
     border: .1rem solid var(--blanco);
+    cursor: pointer;
 }
 
 .home .contenedor-redes .redes div:nth-child(2) {
@@ -94,6 +95,7 @@
     align-items: center;
     padding: .75rem 0;
     border: none;
+    cursor: pointer;
 }
 
 .home .contenedor-boton .boton-contactame .icono-mail {
