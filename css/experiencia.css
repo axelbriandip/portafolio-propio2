@@ -68,10 +68,18 @@
 }
 
 /* celulares promedio */
-@media only screen and (min-width: 450px) {}
+@media only screen and (min-width: 450px) {
+    .experiencia .item .caja-descripcion .empresa {
+        font-size: 1.1rem;
+    }
+}
 
 /* Small devices: teléfonos grandes y tablets */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .experiencia .item .caja-descripcion .empresa {
+        font-size: 1.2rem;
+    }
+}
 
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
@@ -95,7 +103,15 @@
 }
 
 /* Large devices: laptop y desktop */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    .experiencia .item .caja-descripcion .empresa {
+        font-size: 1rem;
+    }
+}
 
 /* Extra large devices: laptop y desktop grandes */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .experiencia .item .caja-descripcion .empresa {
+        font-size: 1.1rem;
+    }
+}
