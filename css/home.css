@@ -10,6 +10,26 @@
 
 .home {
     padding: 4rem 1rem 0 1rem;
+    display: grid;
+    grid-row: repeat(4, 1fr);
+    grid-template-areas:
+    "texto"
+    "foto"
+    "redes"
+    "boton";
+}
+
+.home .contenedor-texto {
+    grid-area: texto;
+}
+.home .contenedor-foto {
+    grid-area: foto;
+}
+.home .contenedor-redes {
+    grid-area: redes;
+}
+.home .contenedor-boton {
+    grid-area: boton;
 }
 
 .home .contenedor-texto h1 {
@@ -22,6 +42,13 @@
     font-size: 1rem;
     color: var(--gris-oscuro);
     margin-bottom: 1rem;
+}
+
+.home .contenedor-foto {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .home .contenedor-foto .foto-fondo {
@@ -42,37 +69,38 @@
     width: 85%;
 }
 
-.home .contenedor-foto {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 /* REDES */
 .home .contenedor-redes {
     position: relative;
     display: flex;
     justify-content: center;
 }
+
 .home .contenedor-redes .redes {
-    display: flex;
     position: absolute;
-    top: -1.25rem;
+    top: -1.4rem;
+    display: flex;
 }
+
 .home .contenedor-redes .redes div {
     background-color: var(--violeta-claro);
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    border: .1rem solid var(--blanco);
+    border: .15rem solid var(--blanco);
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.home .contenedor-redes .redes div:first-child {
+    margin-right: 1.5rem;
+}
+
 .home .contenedor-redes .redes div i {
     color: var(--blanco);
+    font-size: 1.25rem;
 }
 
 /* BOTÓN */
@@ -83,14 +111,14 @@
 .home .contenedor-boton .boton-contactame{
     background-color: var(--violeta-oscuro);
     color: var(--blanco);
-    width: 100%;
     font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     padding: .75rem 0;
     border: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .home .contenedor-boton .boton-contactame .icono-mail {
@@ -103,19 +131,8 @@
     .home .contenedor-texto {
         width: 90%;
     }
-
-    .home .contenedor-redes .redes div {
-        width: 3rem;
-        height: 3rem;
-        border: .1rem solid var(--blanco);
-    }
-    
-    .home .contenedor-redes .redes div:nth-child(2) {
-        margin: 0 2.5rem;
-    }
-
     .home .contenedor-redes .redes {
-        top: -1.5rem;
+        top: -1.6rem;
     }
 }
 
@@ -124,17 +141,14 @@
     .home .contenedor-foto .foto-fondo {
         width: 90%;
     }
-
     .home .contenedor-redes .redes div {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 3.75rem;
+        height: 3.75rem;
     }
-    
-    .home .contenedor-redes .redes div:nth-child(2) {
-        margin: 0 3rem;
+    .home .contenedor-redes .redes div:first-child {
+        margin-right: 3.5rem;
     }
-
-    .home .contenedor-redes .redes {
+        .home .contenedor-redes .redes {
         top: -2em;
     }
 }
@@ -144,55 +158,51 @@
     .home .contenedor-foto .foto-fondo .lineas-fondo{
         top: -1rem;
     }
-
     .home {
-        display: grid;
+        grid-column: repeat(6, 1fr);
         grid-template-areas:
-        "foto foto foto foto foto texto"
-        "foto foto foto foto foto redes"
-        "foto foto foto foto foto boton";
-        padding: 6rem 3.5rem 0 3.5rem;
+        "foto foto foto foto texto texto"
+        "foto foto foto foto texto texto"
+        "foto foto foto foto redes redes"
+        "foto foto foto foto boton boton";
+        padding: 5rem 3.5rem 0 3.5rem;
     }
-
     .home .contenedor-foto {
         grid-area: foto;
     }
-
     .home .contenedor-texto {
         grid-area: texto;
     }
-
     .home .contenedor-redes {
         grid-area: redes;
         margin-bottom: 2rem;
+        position: relative;
+        justify-content: flex-start;
     }
-
     .home .contenedor-redes .redes div {
         width: 2.5rem;
         height: 2.5rem;
     }
-
+    .home .contenedor-redes .redes div:first-child {
+        margin-right: 1rem;
+    }    
     .home .contenedor-redes .redes {
         top: 0;
     }
-
-    .home .contenedor-redes {
-        position: relative;
-        justify-content: flex-start;
-    }
-
     .home .contenedor-boton {
         grid-area: boton;
     }
-
     .home .contenedor-boton .boton-contactame{
-        width: 70%;
-        padding:.25rem 0;
+        width: 60%;
+        padding:.4rem 0;
     }
 }
 
 /* Large devices: laptop y desktop */
 @media only screen and (min-width: 992px) {
+    .home {
+        padding-left: 5rem;
+    }
     .home .contenedor-boton .boton-contactame{
         width: 35%;
     }
@@ -201,20 +211,7 @@
 /* Extra large devices: laptop y desktop grandes */
 @media only screen and (min-width: 1200px) {
     .home {
-        padding: 6rem 6rem;
-    }
-
-    .home .contenedor-redes .redes div {
-        width: 3rem;
-        height: 3rem;
-    }
-
-    .home .contenedor-boton{
-        display: flex;
-        align-items: flex-end;
-    }
-
-    .home .contenedor-boton .boton-contactame{
-        padding:.5rem 0;
+        padding-top: 5rem;
+        padding-left: 6rem;
     }
 }
