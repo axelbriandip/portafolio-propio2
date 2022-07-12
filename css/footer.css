@@ -20,7 +20,14 @@
 
 .footer a {
     text-decoration: none;
-    color: var(--violeta-oscuro);
+}
+
+.footer a strong {
+    transition: all .2s;
+}
+
+.footer a strong:hover {
+    color: var(--violeta-claro);
 }
 
 body.darkmode .footer,

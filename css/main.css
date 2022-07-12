@@ -24,6 +24,15 @@ body.darkmode {
     color: var(--blanco);
 }
 
+h1, h2 {
+    transition: all .2s;
+    cursor: pointer;
+}
+
+h1:hover, h2:hover {
+    color: var(--violeta-claro);
+}
+
 /* celulares promedio */
 @media only screen and (min-width: 450px) {}
 
