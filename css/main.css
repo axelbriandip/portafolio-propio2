@@ -11,8 +11,17 @@
     --casi-blanco: #f9f6ff;
     --negro: #222222;
     --gris-oscuro: #423f40;
-    --blanco: #ffffff;
+    --blanco: #eee;
     --gris-claro: #f9f5f2;
+}
+
+body {
+    transition: all .3s;
+}
+
+body.darkmode {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
 }
 
 /* celulares promedio */

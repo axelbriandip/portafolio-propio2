@@ -22,3 +22,13 @@
     text-decoration: none;
     color: var(--violeta-oscuro);
 }
+
+body.darkmode .footer,
+body.darkmode .footer a {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+body.darkmode .footer i {
+    color: var(--violeta-oscuro);
+}

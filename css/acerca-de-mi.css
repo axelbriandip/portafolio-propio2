@@ -17,13 +17,11 @@
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: var(--negro);
 }
 
 .acerca-de-mi .parrafo-acerca {
     font-size: 1rem;
     text-align: justify;
-    color: var(--gris-oscuro);
 }
 
 /* celulares promedio */
@@ -31,7 +29,7 @@
 
 /* Small devices: teléfonos grandes y tablets */
 @media only screen and (min-width: 600px) {}
-
+    
 /* Medium devices: tablets */
 @media only screen and (min-width: 768px) {
     .acerca-de-mi {
