@@ -33,6 +33,10 @@ h1:hover, h2:hover {
     color: var(--violeta-claro);
 }
 
+.separador {
+    height: .5rem;
+}
+
 /* celulares promedio */
 @media only screen and (min-width: 450px) {}
 
