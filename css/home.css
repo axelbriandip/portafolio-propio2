@@ -90,6 +90,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .2s;
+}
+
+body.darkmode .home .contenedor-redes .redes div:hover,
+body.darkmode .home .contenedor-boton .boton-contactame:hover {
+    box-shadow: 3px 3px 3px 2px rgba(93, 59, 239, 0.2);
 }
 
 body.darkmode .home .contenedor-redes .redes div,
@@ -99,6 +105,7 @@ body.darkmode .home .contenedor-boton .boton-contactame {
 
 body.darkmode .home .contenedor-boton .boton-contactame {
     border: 2px solid var(--blanco);
+    transition: all .2s;
 }
 
 .home .contenedor-redes .redes div:first-child {

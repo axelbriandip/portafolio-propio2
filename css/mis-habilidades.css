@@ -29,16 +29,20 @@
 
 .mis-habilidades .item {
     min-width: 12rem;
-    /* height: 12rem; */
     min-height: auto;
     background-color: var(--gris-claro);
     margin-right: 1rem;
     padding: 1rem;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+    cursor: pointer;
 }
 
 body.darkmode .mis-habilidades .item {
     background-color: var(--negro);
+}
+body.darkmode .mis-habilidades .item:hover {
+    box-shadow: 3px 3px 3px 2px rgba(93, 59, 239, 0.2);
 }
 
 .mis-habilidades .item h4 {
