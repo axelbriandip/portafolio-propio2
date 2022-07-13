@@ -35,6 +35,8 @@ toContacto.addEventListener("click", function() {
 // change theme
 const moon = document.querySelector(".moon");
 const moon2 = document.querySelector(".moon2");
+const sun = document.querySelector(".sun");
+const sun2 = document.querySelector(".sun2");
 const body = document.querySelector("body");
 
 load();
@@ -43,8 +45,29 @@ moon.addEventListener("click", function(){
     body.classList.toggle("darkmode");
     store(body.classList.contains("darkmode"));
 });
+// btn desktop
+moon.addEventListener("click", function(){
+    // body.classList.toggle("darkmode");
+    sun.classList.toggle("toggle");
+    moon.classList.toggle("toggle");
+    store(body.classList.contains("darkmode"));
+});
+sun.addEventListener("click", function(){
+    body.classList.toggle("darkmode");
+    sun.classList.toggle("toggle");
+    moon.classList.toggle("toggle");
+    store(body.classList.contains("darkmode"));
+});
 moon2.addEventListener("click", function(){
     body.classList.toggle("darkmode");
+    sun2.classList.toggle("toggle");
+    moon2.classList.toggle("toggle");
+    store(body.classList.contains("darkmode"));
+});
+sun2.addEventListener("click", function(){
+    body.classList.toggle("darkmode");
+    sun2.classList.toggle("toggle");
+    moon2.classList.toggle("toggle");
     store(body.classList.contains("darkmode"));
 });
 

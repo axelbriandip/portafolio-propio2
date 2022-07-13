@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links externos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- links internos -->
     <link rel="stylesheet" href="css/columnas.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
@@ -14,11 +21,6 @@
     <link rel="stylesheet" href="css/portafolio.css">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/desc-emergentes.css">
     <title>Portafolio</title>
 </head>
@@ -28,10 +30,10 @@
         <div class="nav-normal">
             <div class="config">
                 <i class="fa-solid fa-moon moon"></i>
-                <i class="fa-solid fa-earth-americas earth"></i>
+                <i class="fa-solid fa-sun sun toggle"></i>
+                <!-- <i class="fa-solid fa-earth-americas earth"></i> -->
             </div>
             <i class="fa-solid fa-bars icono-menu"></i>
-            <!-- <img src="svg/menu 1.svg" alt="ícono menú" class="icono-menu"> -->
         </div>
         <div class="nav-toggle fixed toggle">
             <ul>
@@ -45,8 +47,9 @@
         </div>
         <div class="nav-desktop">
             <div class="config">
-                <div tooltip="Tema oscuro" flow="down"><i class="fa-solid fa-moon moon moon2"></i></div>
-                <div tooltip="Español" flow="down"><i class="fa-solid fa-earth-americas earth"></i></div>
+                <div tooltip="Tema oscuro" flow="down"><i class="fa-solid fa-moon moon2"></i></div>
+                <div tooltip="Tema claro" flow="down"><i class="fa-solid fa-sun sun2 toggle"></i></div>
+                <!-- <div tooltip="Español" flow="down"><i class="fa-solid fa-earth-americas earth"></i></div> -->
             </div>
             <div class="items">
                 <ul>

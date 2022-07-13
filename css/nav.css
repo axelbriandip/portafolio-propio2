@@ -41,6 +41,7 @@ body.darkmode .nav-desktop a {
 .config {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .moon, .earth {
@@ -49,8 +50,8 @@ body.darkmode .nav-desktop a {
     cursor: pointer;
 }
 
-.moon {
-    margin-right: .75rem;
+.moon2:first-child {
+    margin-right: 1.25rem;
 }
 
 /* nav toggle */
