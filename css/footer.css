@@ -45,8 +45,8 @@ body.darkmode .footer i {
 .arrow-up {
     font-size: 2rem;
     position: absolute;
-    right: 3.5rem;
-    top: -3.5rem;
+    right: 7%;
+    top: -150%;
     color: var(--violeta-oscuro);
     transition: all .2s;
 }
@@ -58,4 +58,10 @@ body.darkmode .arrow-up:hover {
 
 body.darkmode .arrow-up {
     color: var(--violeta-claro);
+}
+
+@media only screen and (max-width: 767px) {
+    .arrow-up {
+        display: none;
+    }
 }
