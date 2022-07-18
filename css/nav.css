@@ -17,6 +17,7 @@
 
 /* nav normal */
 .nav .nav-normal {
+    width: 100vw;
     background-color: var(--casi-blanco);
     display: flex;
     justify-content: space-between;
@@ -90,10 +91,16 @@ body.darkmode .nav .nav-toggle {
 
 /* nav desktop */
 .nav .nav-desktop {
+    width: 100vw;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 5%;
     background-color: var(--casi-blanco);
+}
+
+.nav .nav-desktop .items ul {
+    margin-bottom: 0;
 }
 
 .nav .nav-desktop li {

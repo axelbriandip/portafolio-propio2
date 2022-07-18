@@ -27,6 +27,7 @@ body.darkmode {
 h1, h2 {
     transition: all .2s;
     cursor: pointer;
+    font-weight: bold;
 }
 
 h1:hover, h2:hover {
