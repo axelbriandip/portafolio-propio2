@@ -75,6 +75,7 @@ body.darkmode .nav .nav-toggle {
 }
 
 .nav .nav-toggle li {
+    list-style: none;
     text-align: center;
     padding: .75rem 0;
 }
