@@ -24,11 +24,11 @@ body.darkmode {
 }
 
 body.darkmode .dm1 {
-    color: #eee;
+    color: #fff;
 }
 
 body.darkmode .dm2 {
-    color: #ccc;
+    color: #ddd;
 }
 
 h1, h2, h4 {
