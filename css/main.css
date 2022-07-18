@@ -8,11 +8,11 @@
 :root {
     --violeta-claro: #8e7bef;
     --violeta-oscuro: #8e89a7;
-    --casi-blanco: #f9f6ff;
-    --negro: #222222;
-    --gris-oscuro: #423f40;
-    --blanco: #eee;
-    --gris-claro: #f9f5f2;
+    --negro: #333;
+    --slate-negro: #444;
+    --gris: #777;
+    --blanco: #fff;
+    /* --casi-blanco: red; */
 }
 
 body {
@@ -20,11 +20,18 @@ body {
 }
 
 body.darkmode {
-    background-color: var(--gris-oscuro);
-    color: var(--blanco);
+    background-color: var(--slate-negro);
 }
 
-h1, h2 {
+body.darkmode .dm1 {
+    color: #eee;
+}
+
+body.darkmode .dm2 {
+    color: #ccc;
+}
+
+h1, h2, h4 {
     transition: all .2s;
     cursor: pointer;
     font-weight: bold;
