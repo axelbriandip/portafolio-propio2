@@ -80,6 +80,11 @@ body.darkmode .nav .nav-toggle {
     padding: .75rem 0;
 }
 
+.nav .nav-toggle ul {
+    margin-bottom: 0;
+    padding-left: 0
+}
+
 .nav .nav-toggle a {
     text-decoration: none;
     color: var(--blanco);
