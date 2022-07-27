@@ -12,34 +12,31 @@
     margin-top: 2rem;
     padding: 1rem 0;
     background-color: var(--gris-claro);
-    color: var(--violeta-oscuro);
+    color: var(--negro-);
     text-align: center;
     font-size: 1rem;
     font-weight: 400;
     position: relative;
 }
 
-.footer a {
-    text-decoration: none;
-}
-
-.footer a strong {
-    transition: all .2s;
-    color: var(--violeta-oscuro);
-}
-
-.footer a strong:hover {
-    color: var(--violeta-claro);
-}
-
-body.darkmode .footer,
-body.darkmode .footer a {
+body.darkmode .footer, body.darkmode .footer a {
     background-color: var(--negro);
     color: var(--blanco);
 }
 
-body.darkmode .footer i {
-    color: var(--violeta-oscuro);
+.footer i {
+    color: var(--violeta-claro);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--negro);
+    transform: .2s all;
+}
+
+.footer a:hover
+, body.darkmode .footer a:hover {
+    color: var(--violeta-claro);
 }
 
 .arrow-up {

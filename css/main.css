@@ -37,7 +37,10 @@ h1, h2, h4 {
     font-weight: bold;
 }
 
-h1:hover, h2:hover {
+body.darkmode h1:hover,
+body.darkmode h2:hover,
+h1:hover,
+h2:hover {
     color: var(--violeta-claro);
 }
 

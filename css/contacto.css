@@ -50,7 +50,7 @@ body.darkmode .contacto .contenedor-cards .card:hover {
 .contacto .contenedor-cards .card i {
     padding-bottom: 2rem;
     font-size: 2.5rem;
-    color: var(--violeta-oscuro);
+    color: var(--violeta-claro);
 }
 
 .contacto .contenedor-cards .card h4 {
