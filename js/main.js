@@ -19,10 +19,10 @@ const toMishabilidades = document.querySelector(".to-mishabilidades");
 toMishabilidades.addEventListener("click", function() {
     navToggle.classList.toggle("toggle");
 })
-const toExperiencia = document.querySelector(".to-experiencia");
-toExperiencia.addEventListener("click", function() {
-    navToggle.classList.toggle("toggle");
-})
+// const toExperiencia = document.querySelector(".to-experiencia");
+// toExperiencia.addEventListener("click", function() {
+//     navToggle.classList.toggle("toggle");
+// })
 const toPortafolio = document.querySelector(".to-portafolio");
 toPortafolio.addEventListener("click", function() {
     navToggle.classList.toggle("toggle");
