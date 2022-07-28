@@ -19,7 +19,7 @@
 
 .portafolio .titulo-portafolio h2 {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .portafolio .contenedor-fotos-p div {
@@ -99,3 +99,114 @@
 
 /* Extra large devices: laptop y desktop grandes */
 @media only screen and (min-width: 1200px) {}
+
+/* NEW CARDS */
+.container1 {
+    transform: translate(0, 0);
+    width: 230px;
+    height: 350px;
+    background: url('../img/Rectangle\ 48.jpg') center / cover;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    transform: .5s;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link a i {
+    margin: 5px;
+    background: #fff;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    transition: .5s ease;
+    transform: translateY(200px);
+    border-radius: 50%;
+    cursor: pointer;
+    color: #333;
+}
+.link a i:hover, body.darkmode .link a i:hover {
+    background: var(--violeta-claro);
+    box-shadow: 2px 2px 2px 1px rgba(93, 59, 239, 0.2);
+}
+.text p, .bracket {
+    color: var(--violeta-claro);
+}
+i:nth-child(1) {
+    transition-delay: .1s;
+}
+i:nth-child(2) {
+    transition-delay: .2s;
+}
+/* i:nth-child(3) {
+    transition-delay: .3s;
+} */
+.text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    padding: 30px 0;
+    transition: .5s;
+    transform: translateY(100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body.darkmode .text {
+    background: #222;
+    color: #ddd;
+}
+body.darkmode .link a i {
+    background: #333;
+    color: #eee;
+}
+.text p {
+    text-align: center;
+    font-weight: bold;
+}
+.text p:nth-child(2) {
+    color: #bfbfbf;
+}
+.container1:hover {
+    background-position: bottom;
+}
+.container1:hover .overlay {
+    opacity: 1;
+}
+.container1:hover i {
+    transform: translateY(0);
+}
+.container1:hover .text {
+    transform: translateY(0);
+}
+i:hover {
+    animation: effect .2s ease;
+}
+@keyframes effect {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(4px);
+    }
+    50% {
+        transform: translateX(-4px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.content-port {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3rem;
+}
