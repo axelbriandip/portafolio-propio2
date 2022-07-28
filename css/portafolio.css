@@ -105,10 +105,18 @@
     transform: translate(0, 0);
     width: 230px;
     height: 350px;
-    background: url('../img/Rectangle\ 48.jpg') center / cover;
     border-radius: 5px;
     overflow: hidden;
     transition: .5s;
+}
+.item1 {
+    background: url('../img/screenshot-pokedex-01-01.jpg') center / cover;
+}
+.item2 {
+    background: url('../img/screenshot-rickmorty-01.jpg') center / cover;
+}
+.item3 {
+    background: url('../img/screenshot-users-01.jpg') center / cover;
 }
 .overlay {
     width: 100%;
