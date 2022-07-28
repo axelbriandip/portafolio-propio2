@@ -101,7 +101,7 @@ body.darkmode .nav .nav-toggle {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 1rem 10%;
     background-color: var(--casi-blanco);
 }
 
@@ -124,6 +124,43 @@ body.darkmode .nav .nav-toggle {
 
 .nav .nav-desktop a:hover {
     color: var(--violeta-claro);
+}
+
+/* TOGGLE THEME IG */
+#toggle1, #toggle {
+    display: none;
+}
+.btn-theme, .btn-theme1 {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #ddd;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.btn-theme::after, .btn-theme1::after {
+    content: url('../img/moon.png');
+    width: 30px;
+    height: 30px;
+    background-color: var(--violeta-oscuro);
+    border: 2px solid #eee;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: -3px;
+    left: 0;
+    display: grid;
+    place-content: center;
+    line-height: 0;
+    transition: 1s all;
+    transform: 1s ease-in;
+}
+#toggle:checked + .btn-theme::after,
+#toggle1:checked + .btn-theme1::after {
+    content: url('../img/sun.png');
+    background-color: var(--violeta-claro);
+    transform: translateX(20px) rotate(360deg);
 }
 
 /* celulares promedio */

@@ -38,36 +38,18 @@ const moon2 = document.querySelector(".moon2");
 const sun = document.querySelector(".sun");
 const sun2 = document.querySelector(".sun2");
 const body = document.querySelector("body");
+const btn_theme = document.querySelector(".btn-theme");
+const btn_theme1 = document.querySelector(".btn-theme1");
 
 load();
 
-moon.addEventListener("click", function(){
+btn_theme.addEventListener("click", function(){
     body.classList.toggle("darkmode");
     store(body.classList.contains("darkmode"));
 });
 // btn desktop
-moon.addEventListener("click", function(){
-    // body.classList.toggle("darkmode");
-    sun.classList.toggle("toggle");
-    moon.classList.toggle("toggle");
-    store(body.classList.contains("darkmode"));
-});
-sun.addEventListener("click", function(){
+btn_theme1.addEventListener("click", function(){
     body.classList.toggle("darkmode");
-    sun.classList.toggle("toggle");
-    moon.classList.toggle("toggle");
-    store(body.classList.contains("darkmode"));
-});
-moon2.addEventListener("click", function(){
-    body.classList.toggle("darkmode");
-    sun2.classList.toggle("toggle");
-    moon2.classList.toggle("toggle");
-    store(body.classList.contains("darkmode"));
-});
-sun2.addEventListener("click", function(){
-    body.classList.toggle("darkmode");
-    sun2.classList.toggle("toggle");
-    moon2.classList.toggle("toggle");
     store(body.classList.contains("darkmode"));
 });
 
