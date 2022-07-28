@@ -195,7 +195,7 @@ body.darkmode .link a i {
 .container1:hover .text {
     transform: translateY(0);
 }
-i:hover {
+.container1 i:hover {
     animation: effect .2s ease;
 }
 @keyframes effect {
